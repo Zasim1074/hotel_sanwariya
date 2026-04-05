@@ -31,12 +31,19 @@ export default function Footer() {
                 width={50}
               />
             </a>
-            <Image
-              src="/Images/footer/agoda.png"
-              alt="agoda icon"
-              height={50}
-              width={50}
-            />
+
+            <a
+              href="https://www.agoda.com/sanwariya-hotel/hotel/indore-in.html?cid=1844104&ds=GbjznQTLnQyX%2FpK%2B"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/Images/footer/agoda.png"
+                alt="agoda icon"
+                height={50}
+                width={50}
+              />
+            </a>
             <a
               href="https://www.oyorooms.com/329670/"
               target="_blank"
@@ -49,12 +56,18 @@ export default function Footer() {
                 width={50}
               />
             </a>
-            <Image
-              src="/Images/footer/mmtp.png"
-              alt="agoda icon"
-              height={50}
-              width={50}
-            />
+            <a
+              href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202509221525169614&Campaign=&_uCurrency=INR&aud=&checkin=04112026&checkout=04122026&city=CTIDR&cmp=googlehoteldfinder_DH__META_Free_RateRule%3D_usernolist__default_IN_localuniversal_202509221525169614&country=IN&lat=22.75718&lng=75.90847&locusId=CTIDR&locusType=city&mtkeys=8828e096-ff61-4e1c-a570-9e71112b4580Saturday&rank=1&roomCount=1&roomStayQualifier=2e0e&rsc=1e2e0e&topHtlId=202509221525169614&totalGuestCount=2&isPropSearch=T"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/Images/footer/mmtp.png"
+                alt="mmtp icon"
+                height={50}
+                width={50}
+              />
+            </a>
           </div>
         </div>
 

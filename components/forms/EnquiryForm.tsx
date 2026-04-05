@@ -2,19 +2,17 @@
 
 import { useState } from "react";
 import { Button } from "../ui/button";
+import { whatsappNumber1 } from "@/data/contacts";
 
 export default function EnquiryForm() {
   const [formData, setFormData] = useState({
     checkIn: "",
     checkOut: "",
     adults: "",
-    children: "",
     rooms: "",
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
-  ) => {
+  const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -22,7 +20,27 @@ export default function EnquiryForm() {
   };
 
   const handleBooking = () => {
-    console.log("Booking Data:", formData);
+    if (!formData.checkIn || !formData.checkOut || !formData.rooms) {
+      alert("Please fill Check-in, Check-out, and Rooms fields");
+      return;
+    }
+
+    const text = `New Booking Request from you website:
+        Check In: ${formData.checkIn}
+        Chek Out: ${formData.checkOut}
+        Rooms: ${formData.rooms}
+        Adults: ${formData.adults || "Not selected"}`;
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber1}?text=${encodeURIComponent(text)}`;
+
+    window.open(whatsappUrl, "_blank");
+
+    setFormData({
+      checkIn: "",
+      checkOut: "",
+      rooms: "",
+      adults: "",
+    });
   };
 
   return (
@@ -62,6 +80,30 @@ export default function EnquiryForm() {
               />
             </div>
 
+            {/* Rooms */}
+            <div className="flex sm:flex-col gap-1 items-start">
+              <label className="text-lg text-gray-700 font-semibold font-heading">
+                Rooms:
+              </label>
+              <select
+                name="rooms"
+                value={formData.rooms}
+                onChange={handleChange}
+                className={`w-full border p-3 rounded-md outline-none 
+                focus:ring-2 focus:ring-primary/30 focus:border-primary
+                ${formData.rooms === "" ? "text-gray-500" : "text-gray-700"}`}
+              >
+                <option value="" disabled>
+                  Select
+                </option>
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+                  <option key={num}>
+                    {num} Room{num > 1 && "s"}
+                  </option>
+                ))}
+              </select>
+            </div>
+
             {/* Adults */}
             <div className="flex sm:flex-col gap-1 items-start">
               <label className="text-lg text-gray-700 font-semibold font-heading">
@@ -78,33 +120,9 @@ export default function EnquiryForm() {
                 <option value="" disabled>
                   Select
                 </option>
-                {[1, 2, 3, 4, 5].map((num) => (
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
                   <option key={num}>
                     {num} Adult{num > 1 && "s"}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Children */}
-            <div className="flex sm:flex-col gap-1 items-start">
-              <label className="text-lg text-gray-700 font-semibold font-heading">
-                Children:
-              </label>
-              <select
-                name="children"
-                value={formData.children}
-                onChange={handleChange}
-                className={`w-full border p-3 rounded-md outline-none 
-                focus:ring-2 focus:ring-primary/30 focus:border-primary
-                ${formData.children === "" ? "text-gray-500" : "text-gray-700"}`}
-              >
-                <option value="" disabled>
-                  Select
-                </option>
-                {[0, 1, 2, 3, 4].map((num) => (
-                  <option key={num}>
-                    {num} Child{num !== 1 && "ren"}
                   </option>
                 ))}
               </select>

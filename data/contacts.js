@@ -18,34 +18,34 @@ export const roomType = ["ac rooms", "non ac rooms", "co-oporate rooms"];
 
 export const roomsData = [
   {
-    title: "Classic Double Bed",
-    price: "Rs. 150",
+    title: "Classic Single Bed",
+    price: "Rs. 800",
     img: "/Images/body/room1.png",
   },
   {
     title: "Classic Double Bed",
-    price: "Rs. 150",
+    price: "Rs. 1200",
     img: "/Images/body/room2.png",
   },
   {
-    title: "Classic Double Bed",
-    price: "Rs. 150",
+    title: "Classic Tripple Bed",
+    price: "Rs. 1500",
     img: "/Images/body/room3.png",
   },
 
   {
-    title: "Classic Double Bed",
-    price: "Rs. 150",
+    title: "Classic AC Single Bed",
+    price: "Rs. 1000",
     img: "/Images/body/room5.png",
   },
   {
-    title: "Classic Double Bed",
-    price: "Rs. 150",
+    title: "Classic AC Double Bed",
+    price: "Rs. 1300",
     img: "/Images/body/room7.png",
   },
   {
-    title: "Classic Double Bed",
-    price: "Rs. 150",
+    title: "Classic AC Tripple Bed",
+    price: "Rs. 1800",
     img: "/Images/body/room6.png",
   },
 ];
