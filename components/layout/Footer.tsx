@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         {/* Links */}
-        <div>
+        {/* <div>
           <h4 className="font-heading text-primary text-lg mb-3">
             Quick Links
           </h4>
@@ -93,7 +93,7 @@ export default function Footer() {
               <Link href="#blog">Blog</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Contact */}
         <div>
@@ -141,10 +141,10 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/*  Location */}
+        {/*  Hotel SanWariya */}
         <div>
           <h4 className="font-heading  text-primary text-lg mb-3">
-            Our Location
+            Hotel Sanwariya
           </h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex gap-2 items-start">
@@ -157,6 +157,43 @@ export default function Footer() {
             <li>
               <a
                 href="https://www.google.com/maps/place/Sanwariya+Hotel/@22.7571124,75.9085452,21z/data=!4m17!1m7!3m6!1s0x39631d40c407b99d:0x24684e2c8b6a71be!2sThe+Pav+Junction!8m2!3d22.7573899!4d75.9079555!16s%2Fg%2F11wv21jfft!3m8!1s0x39631d2d95e9e1e3:0xdb0cf70dc020c21!5m2!4m1!1i2!8m2!3d22.7571789!4d75.908471!16s%2Fg%2F11yj_bd87l?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:decoration-underline hover:text-primary"
+              >
+                View on map
+              </a>
+            </li>
+
+            <li className="mt-5">
+              <a
+                href={`https://wa.me/${whatsappNumber1}?text=${message}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="whatsapp" size="md">
+                  WhatsApp
+                </Button>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/*  Hotel SanWariya */}
+        <div>
+          <h4 className="font-heading  text-primary text-lg mb-3">
+            Hotel Bamleshwari
+          </h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li className="flex gap-2 items-start">
+              <MapPin size={28} />
+              <span>
+                38 Muskhedi, Near by Yadav Dharmasala, Musakhedi, Indore, 452010
+              </span>
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/travel/search?ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjqDxAEGAsSBwjqDxAEGAwYATICEAAqBwoFOgNJTlI&qs=CAEyE0Nnb0kxTXprNU9PRjlyQnJFQUU4CkIJEbAM2hTAABASQgkRjnMKgBvGm41CCREi3HoefcCu-VpUMlKqAU8QASoGIgIzOCgAMh8QASIbTw_ZMw9tdxiypeeVTw1pR2VbKhX-zBGY_wa6MiIQAiIeMzggbXVzYWtoZWRpIGhvdGVsIGJhbWxlc2h3YXJp&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:decoration-underline hover:text-primary"
