@@ -12,10 +12,17 @@ const navigationData = [
   { title: "Blog", href: "#blog" },
   { title: "Contact", href: "#contact" },
 ];
+// const navbarHeight = document.getElementById("navbar")?.offsetHeight;
+// const sectionTop = document.getElementById("home")?.offsetTop;
+
+// window.scrollTo({
+//   top: sectionTop - navbarHeight,
+//   behavior: "smooth",
+// });
 
 export default function Navbar() {
   return (
-    <nav className="hidden md:flex items-center gap-8">
+    <nav className="hidden md:flex items-center gap-8" id="navbar">
       {navigationData.map((item) => (
         <Link
           key={item.href}

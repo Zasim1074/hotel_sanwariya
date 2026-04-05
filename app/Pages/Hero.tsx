@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-[89vh] bg-[url('/Images/home/h1_hero.jpg')] bg-cover bg-center scroll-mt-24"
+      className="relative h-[89vh] bg-[url('/Images/home/h1_hero.jpg')] bg-cover bg-center "
     >
       {/* overlay */}
       <div className="absolute inset-0 bg-black/35" />

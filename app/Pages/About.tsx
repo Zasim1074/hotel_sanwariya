@@ -4,7 +4,7 @@ import room from "@/public/Images/body/room.png";
 
 export default function About() {
   return (
-    <section id="about" className="pt-60 sm:pt-40 md:pt-35 lg:pt-50 flex flex-col items-center bg-[#f7f7f7] scroll-mt-24">
+    <section id="about" className="pt-60 sm:pt-40 md:pt-35 lg:pt-50 flex flex-col items-center bg-[#f7f7f7]">
       <div className="container grid md:grid-cols-2 gap-12 lg:gap-25 center items-center">
         {/* LEFT IMAGE STACK */}
         <div className="relative flex justify-center">

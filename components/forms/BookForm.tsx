@@ -59,7 +59,7 @@ export default function BookForm() {
   };
 
   return (
-    <div id="blog" className="bg-white p-8 rounded-xl shadow-lg scroll-mt-30">
+    <div id="blog" className="bg-white p-8 rounded-xl shadow-lg ">
       <h3 className="text-2xl font-bold mb-4 text-gray-800">
         Book / Enquire Now
       </h3>

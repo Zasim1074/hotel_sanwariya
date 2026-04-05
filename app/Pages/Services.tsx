@@ -7,7 +7,7 @@ import { capitalizeFirstLetter } from "@/utils/commonFunctions";
 
 export default function Services() {
   return (
-    <section id="services" className="py-10 sm:py-20 bg-white scroll-mt-5">
+    <section id="services" className="py-10 sm:py-20 bg-white">
       <div className="text-center mb-10 sm:mb-20 px-6">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800">
           Our Services

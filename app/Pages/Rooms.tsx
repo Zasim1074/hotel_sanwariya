@@ -4,7 +4,7 @@ import { roomsData } from "@/data/contacts";
 
 export default function Rooms() {
   return (
-    <section id="rooms" className="mt-10 md:mt-20 lg:mt-40  bg-gray-50 scroll-mt-24">
+    <section id="rooms" className="mt-10 md:mt-20 lg:mt-40  bg-gray-50 ">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-0 sm:mb-12">
