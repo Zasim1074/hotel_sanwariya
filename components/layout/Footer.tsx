@@ -20,6 +20,24 @@ export default function Footer() {
 
           <div className="flex items-center justify-start gap-3 cursor-pointer">
             <a
+              href="https://www.instagram.com/1sanwariyahotel?utm_source=qr&igsh=N3MwYXo4cTYyc3Mx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/Images/footer/instagram.png"
+                alt="Instagram icon"
+                height={50}
+                width={50}
+              />
+            </a>
+            <Image
+              src="/Images/footer/agoda.png"
+              alt="agoda icon"
+              height={50}
+              width={50}
+            />
+            <a
               href="https://www.oyorooms.com/329670/"
               target="_blank"
               rel="noopener noreferrer"
@@ -33,12 +51,6 @@ export default function Footer() {
             </a>
             <Image
               src="/Images/footer/mmtp.png"
-              alt="agoda icon"
-              height={50}
-              width={50}
-            />
-            <Image
-              src="/Images/footer/agoda.png"
               alt="agoda icon"
               height={50}
               width={50}
@@ -132,6 +144,8 @@ export default function Footer() {
             <li>
               <a
                 href="https://www.google.com/maps/place/Sanwariya+Hotel/@22.7571124,75.9085452,21z/data=!4m17!1m7!3m6!1s0x39631d40c407b99d:0x24684e2c8b6a71be!2sThe+Pav+Junction!8m2!3d22.7573899!4d75.9079555!16s%2Fg%2F11wv21jfft!3m8!1s0x39631d2d95e9e1e3:0xdb0cf70dc020c21!5m2!4m1!1i2!8m2!3d22.7571789!4d75.908471!16s%2Fg%2F11yj_bd87l?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:decoration-underline hover:text-primary"
               >
                 View on map

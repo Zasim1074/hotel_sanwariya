@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import About from "./about/About";
-import Blog from "./blog/Blog";
-import Hero from "./home/Hero";
-import Rooms from "./rooms/Rooms";
-import Services from "./service/Services";
-import ShowRooms from "./showRooms/ShowRooms";
+import About from "./Pages/About";
+import Blog from "./Pages/Blog";
+import Hero from "./Pages/Hero";
+import Rooms from "./Pages/Rooms";
+import Services from "./Pages/Services";
+import ShowRooms from "./Pages/ShowRooms";
 
 export const metadata: Metadata = {
   title: "Hotel Sanwariya | Home",
